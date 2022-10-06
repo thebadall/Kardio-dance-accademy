@@ -1,0 +1,65 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+          ul
+            div#logo
+              img(src="../static/img/logo.png")
+              | HDA
+            li #[a(href='/')  Home] 
+            li #[a(href='/about') About]
+            li #[a(href='/services') Services] 
+            li #[a(href='/class-info') Class Info]
+            li #[a(href='/contact') Contact]
+    section#introSection
+        div 
+            h1 Welcome 
+            p Kardio Dance Academy
+            button Explore More
+
+            //- mission section 
+    section#missionSection
+        h2 Our Mission
+        div.mission-card
+          div.card 
+            h3 Dance Perfection
+            div.card-box
+              div.card-img 
+                img(src="../static/img/3.png", )
+              div.card-content
+                p This is the best dance academy of universe
+
+          div.card 
+            h3 Dance the Way You Like
+            div.card-box
+              div.card-img 
+                img(src="../static/img/1.png", )
+              div.card-content
+                p This is the best dance academy of universe
+
+          div.card 
+            h3 Expert Teaching
+            div.card-box
+              div.card-img 
+                img(src="../static/img/2.png", )
+              div.card-content
+                p This is the best dance academy of universe
+
+          //- sponser section 
+    section#sponserSection
+        h2 Our Sponser
+        div#sponsers 
+          img(src="../static/img/logo1.png", alt="image not found")
+          img(src="../static/img/logo3.png", alt="image not found")
+          img(src="../static/img/logo2.png", alt="image not found")
+          img(src="../static/img/logo4.png", alt="image not found")
+    
+    
+    footer#footer 
+        | Copyright@2022 kardioDanceAcademy.com | All right Reserved
+    script
+      include ../static/index.js

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+}
+#logo img{
+    height: 40px;
+    filter: invert(1);
+}
+#navbar{
+    background-color: rgb(63, 8, 8);
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+#navbar li{
+    list-style: none;
+    padding: 1rem;
+}
+#navbar ul{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+}
+#navbar li a:hover{
+    color: rgba(236, 221, 10, 0.836);
+}
+#introSection{
+    height: 70vh;
+    background: center / cover no-repeat url(../static/img/bg.jpg);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    
+}
+#introSection div{
+    /* position: relative; */
+    /* bottom: 50px; */
+    padding-left: 2rem;
+    line-height: 4rem;
+}
+#introSection div button{
+    padding: 5px 8px;
+    margin-left: 1rem;
+    position: relative;
+    bottom: 1rem;
+    background-color: yellow;
+    color: black;
+}
+
+#introSection div h1{
+    font-size: 5rem;
+}
+#introSection div p{
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+#sponserSection{
+    background-color: rgb(236, 236, 225);
+}
+#sponserSection h2, #missionSection h2{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+#sponsers {
+    height: 5rem;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+#sponsers img{
+    height: 80%;
+    margin: 20px;
+}
+.card{
+    border: 2px solid yellow;
+    border-radius: 10px;
+    width: 30%;
+    height: 10rem;
+    margin: 0 10px;
+    
+}
+.card h3{
+    background-color: yellow;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 6rem;
+    padding: 0 14px;
+}
+.card-img img{
+    height: inherit;
+}
+.mission-card{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+}
+.mission-card .card h3{
+    padding: 0.5rem;
+    text-align: center;
+}
+#footer{
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
